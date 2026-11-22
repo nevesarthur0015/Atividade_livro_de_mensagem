@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Certeza que quer apagar?</h2>
+
+    <form action="{{url_for('limpar_dados')}}" method="POST">
+        <button type="submit">Sim</button>
+    </form>
+
+    <form action="{{url_for('livro_mensagem')}}" method="POST">
+        <button type="submit">Não</button>
+    </form>
+
+
+</body>
+</html>
